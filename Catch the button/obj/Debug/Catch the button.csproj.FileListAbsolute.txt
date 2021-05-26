@@ -1,0 +1,21 @@
+C:\Users\helio\source\repos\Catch the button\Catch the button\obj\Debug\Catch_the_button.Properties.Resources.resources
+C:\Users\helio\source\repos\Catch the button\Catch the button\obj\Debug\Catch the button.csproj.GenerateResource.cache
+C:\Users\helio\source\repos\Catch the button\Catch the button\obj\Debug\Catch the button.csproj.CoreCompileInputs.cache
+C:\Users\helio\source\repos\Catch the button\Catch the button\bin\Debug\Catch the button.exe.config
+C:\Users\helio\source\repos\Catch the button\Catch the button\bin\Debug\Catch the button.exe
+C:\Users\helio\source\repos\Catch the button\Catch the button\bin\Debug\Catch the button.pdb
+C:\Users\helio\source\repos\Catch the button\Catch the button\obj\Debug\Catch the button.exe
+C:\Users\helio\source\repos\Catch the button\Catch the button\obj\Debug\Catch the button.pdb
+C:\Users\vasik\Desktop\Catch the button\Catch the button\obj\Debug\Catch the button.csproj.AssemblyReference.cache
+C:\Users\vasik\Desktop\Catch the button\Catch the button\obj\Debug\Catch_the_button.Form1.resources
+C:\Users\vasik\Desktop\Catch the button\Catch the button\obj\Debug\Catch_the_button.Properties.Resources.resources
+C:\Users\vasik\Desktop\Catch the button\Catch the button\obj\Debug\Catch the button.csproj.GenerateResource.cache
+C:\Users\vasik\Desktop\Catch the button\Catch the button\obj\Debug\Catch the button.csproj.CoreCompileInputs.cache
+C:\Users\vasik\Desktop\Catch the button\Catch the button\obj\Debug\Catch the button.exe
+C:\Users\vasik\Desktop\Catch the button\Catch the button\obj\Debug\Catch the button.pdb
+C:\Users\vasik\Desktop\Catch the button\Catch the button\bin\Debug\Catch the button.exe.config
+C:\Users\vasik\Desktop\Catch the button\Catch the button\bin\Debug\Catch the button.exe
+C:\Users\vasik\Desktop\Catch the button\Catch the button\bin\Debug\Catch the button.pdb
+C:\Users\helio\source\repos\Catch the button\Catch the button\obj\Debug\Catch the button.csproj.AssemblyReference.cache
+C:\Users\helio\source\repos\Catch the button\Catch the button\obj\Debug\Catch_the_button.Main.resources
+C:\Users\helio\source\repos\Catch the button\Catch the button\obj\Debug\Catch_the_button.LeaderDialog.resources
