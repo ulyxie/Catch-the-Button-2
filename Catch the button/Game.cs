@@ -22,7 +22,7 @@ namespace Catch_the_button {
         static Form frm;
         static Label eta;
         static Panel[] hp_indicators = new Panel[5];
-        const int delay = 2000;
+        static int delay = 2000;
         static internal void Init(Label opts, Label ohp, Panel omenu, Label obutton,
             Form oform, Label oeta) {
             pts = opts;
@@ -64,7 +64,7 @@ namespace Catch_the_button {
             Hit(new System.Timers.Timer());
         }
         static private void Updater_Tick(object sender, EventArgs e) {
-            eta.Text = $"New Position in: {(2000 - stpwch.ElapsedMilliseconds)}ms";
+            eta.Text = $"New Position in: {(delay - stpwch.ElapsedMilliseconds)}ms/{delay}ms";
         }
         static private void formResetter_Tick(object sender, EventArgs e) {
             frm.BackColor = Color.FromArgb(240, 240, 240);
@@ -72,6 +72,7 @@ namespace Catch_the_button {
         }
         static internal void Start() { //pressed button start
             points = miss = 0;
+            delay = 2000;
             btn.Visible = btn.Enabled = true;
             menu.Visible = menu.Enabled = false;
             btn.Size = new Size(50, 50);
@@ -95,9 +96,15 @@ namespace Catch_the_button {
             }
             if (stpwch.ElapsedMilliseconds < 500 && !(obj is Form || obj is System.Timers.Timer)) {
                 points += 2;
+                if (points % 20 == 0) {
+                    delay -= 200;
+                }
             }
             else if (stpwch.ElapsedMilliseconds >= 500 && !(obj is Form || obj is System.Timers.Timer)) {
                 points++;
+                if (points % 20 == 0) {
+                    delay -= 200;
+                }
             }
             else if (obj is System.Timers.Timer || obj is Form) {
                 points--;
@@ -125,6 +132,7 @@ namespace Catch_the_button {
             Leaderboard.Output();
 
             points = miss = 0;
+            delay = 2000;
             UpdateText();
             btn.Visible = btn.Enabled = false;
             menu.Visible = menu.Enabled = true;
@@ -142,6 +150,7 @@ namespace Catch_the_button {
 
         static private void resetTimer() {
             timer.Stop();
+            timer.Interval = delay;
             timer.Start();
 
             etaUpdater.Stop();

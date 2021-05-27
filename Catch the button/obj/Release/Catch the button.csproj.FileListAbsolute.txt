@@ -9,3 +9,14 @@ C:\Users\helio\source\repos\Catch the button\Catch the button\obj\Release\Catch 
 C:\Users\helio\source\repos\Catch the button\Catch the button\obj\Release\Catch the button.csproj.CoreCompileInputs.cache
 C:\Users\helio\source\repos\Catch the button\Catch the button\obj\Release\Catch the button.exe
 C:\Users\helio\source\repos\Catch the button\Catch the button\obj\Release\Catch the button.pdb
+C:\Users\vasik\Documents\GitHub\Catch-the-Button-2\Catch the button\bin\Release\Catch the button.exe.config
+C:\Users\vasik\Documents\GitHub\Catch-the-Button-2\Catch the button\bin\Release\Catch the button.exe
+C:\Users\vasik\Documents\GitHub\Catch-the-Button-2\Catch the button\bin\Release\Catch the button.pdb
+C:\Users\vasik\Documents\GitHub\Catch-the-Button-2\Catch the button\obj\Release\Catch the button.csproj.AssemblyReference.cache
+C:\Users\vasik\Documents\GitHub\Catch-the-Button-2\Catch the button\obj\Release\Catch_the_button.Main.resources
+C:\Users\vasik\Documents\GitHub\Catch-the-Button-2\Catch the button\obj\Release\Catch_the_button.LeaderDialog.resources
+C:\Users\vasik\Documents\GitHub\Catch-the-Button-2\Catch the button\obj\Release\Catch_the_button.Properties.Resources.resources
+C:\Users\vasik\Documents\GitHub\Catch-the-Button-2\Catch the button\obj\Release\Catch the button.csproj.GenerateResource.cache
+C:\Users\vasik\Documents\GitHub\Catch-the-Button-2\Catch the button\obj\Release\Catch the button.csproj.CoreCompileInputs.cache
+C:\Users\vasik\Documents\GitHub\Catch-the-Button-2\Catch the button\obj\Release\Catch the button.exe
+C:\Users\vasik\Documents\GitHub\Catch-the-Button-2\Catch the button\obj\Release\Catch the button.pdb
