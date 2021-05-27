@@ -20,7 +20,7 @@ namespace Catch_the_button {
         }
 
         private void Form1_Load(object sender, EventArgs e) {
-            Game.Init(ptsCount, hp, Menu, button, this, timeleft);
+            Game.Init(ptsCount, hp, Menu, button, this, timeleft, milestone);
             Leaderboard.Init(ldrboard, this, highscore);
             button.Parent = stats.Parent = this;
         }

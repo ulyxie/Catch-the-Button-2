@@ -81,6 +81,7 @@ namespace Catch_the_button {
         static internal void Write() {
             Form leaderboardDialog = new LeaderDialog(Game.points, form);
             leaderboardDialog.ShowDialog();
+            if (Leaderboards.Count < 1) return;
             string leaderboardtxt = "";
             foreach (LeaderboardEntry entry in Leaderboards) {
                 leaderboardtxt += $"{entry.name}:{entry.points}\n";

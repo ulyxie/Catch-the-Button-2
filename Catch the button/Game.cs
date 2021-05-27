@@ -21,24 +21,20 @@ namespace Catch_the_button {
         static Label btn;
         static Form frm;
         static Label eta;
-        static Panel[] hp_indicators = new Panel[5];
+        static Label milestone;
         static int delay = 2000;
+        const int milestoneCount = 20;
+        const int delaydown = 200;
         static internal void Init(Label opts, Label ohp, Panel omenu, Label obutton,
-            Form oform, Label oeta) {
+            Form oform, Label oeta, Label omilestone) {
             pts = opts;
             hp = ohp;
             menu = omenu;
             btn = obutton;
             frm = oform;
             eta = oeta;
+            milestone = omilestone;
             SetTimers();
-        }
-        static internal void HealthInit(Panel ohp1, Panel ohp2, Panel ohp3, Panel ohp4) {
-            hp_indicators[0] = ohp1;
-            hp_indicators[1] = ohp2;
-            hp_indicators[2] = ohp3;
-            hp_indicators[3] = ohp4;
-            hp_indicators[4] = ohp4;
         }
         static private void SetTimers() {
             timer = new Timer();
@@ -96,14 +92,14 @@ namespace Catch_the_button {
             }
             if (stpwch.ElapsedMilliseconds < 500 && !(obj is Form || obj is System.Timers.Timer)) {
                 points += 2;
-                if (points % 20 == 0) {
-                    delay -= 200;
+                if (points % milestoneCount == 0 && delay > 400) {
+                    delay -= delaydown;
                 }
             }
             else if (stpwch.ElapsedMilliseconds >= 500 && !(obj is Form || obj is System.Timers.Timer)) {
                 points++;
-                if (points % 20 == 0) {
-                    delay -= 200;
+                if (points % milestoneCount == 0 && delay > 400) {
+                    delay -= delaydown;
                 }
             }
             else if (obj is System.Timers.Timer || obj is Form) {
@@ -137,10 +133,13 @@ namespace Catch_the_button {
             btn.Visible = btn.Enabled = false;
             menu.Visible = menu.Enabled = true;
             eta.Text = "New Position in: ...";
+            milestone.Text = "New Milestone in: ...";
         }
         static private void UpdateText() {
             pts.Text = "Points: " + points;
             hp.Text = "HP: "+(3 - miss).ToString();
+            int ml = points + (milestoneCount - (points - milestoneCount * ((points - points % milestoneCount) / milestoneCount)));
+            milestone.Text = "Next Milestone in: " + (ml-points);
         }
         static void newPos() {
             btn.Location = new Point(
