@@ -27,6 +27,7 @@ namespace Catch_the_button {
             this.Menu = new System.Windows.Forms.Panel();
             this.button = new System.Windows.Forms.Label();
             this.stats = new System.Windows.Forms.Panel();
+            this.milestone = new System.Windows.Forms.Label();
             this.timeleft = new System.Windows.Forms.Label();
             this.hp = new System.Windows.Forms.Label();
             this.ptsCount = new System.Windows.Forms.Label();
@@ -44,7 +45,6 @@ namespace Catch_the_button {
             this.label4 = new System.Windows.Forms.Label();
             this.quit = new System.Windows.Forms.Button();
             this.start = new System.Windows.Forms.Button();
-            this.milestone = new System.Windows.Forms.Label();
             this.Menu.SuspendLayout();
             this.stats.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -87,7 +87,7 @@ namespace Catch_the_button {
             this.button.TabIndex = 6;
             this.button.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.button.Visible = false;
-            this.button.Click += new System.EventHandler(this.button_Click);
+            this.button.MouseDown += new System.Windows.Forms.MouseEventHandler(this.button_MouseDown);
             this.button.MouseEnter += new System.EventHandler(this.button_MouseEnter);
             this.button.MouseLeave += new System.EventHandler(this.button_MouseLeave);
             // 
@@ -102,6 +102,16 @@ namespace Catch_the_button {
             this.stats.Name = "stats";
             this.stats.Size = new System.Drawing.Size(955, 30);
             this.stats.TabIndex = 1002;
+            // 
+            // milestone
+            // 
+            this.milestone.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.milestone.AutoSize = true;
+            this.milestone.Location = new System.Drawing.Point(569, 6);
+            this.milestone.Name = "milestone";
+            this.milestone.Size = new System.Drawing.Size(207, 19);
+            this.milestone.TabIndex = 1002;
+            this.milestone.Text = "Next Milestone in: ...";
             // 
             // timeleft
             // 
@@ -288,16 +298,6 @@ namespace Catch_the_button {
             this.start.UseVisualStyleBackColor = true;
             this.start.Click += new System.EventHandler(this.start_Click);
             // 
-            // milestone
-            // 
-            this.milestone.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.milestone.AutoSize = true;
-            this.milestone.Location = new System.Drawing.Point(569, 6);
-            this.milestone.Name = "milestone";
-            this.milestone.Size = new System.Drawing.Size(207, 19);
-            this.milestone.TabIndex = 1002;
-            this.milestone.Text = "Next Milestone in: ...";
-            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
@@ -311,8 +311,8 @@ namespace Catch_the_button {
             this.Name = "Main";
             this.Text = "Catch the Button 2";
             this.Load += new System.EventHandler(this.Form1_Load);
-            this.Click += new System.EventHandler(this.Form1_Click);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Main_KeyDown);
+            this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Main_MouseDown);
             this.Menu.ResumeLayout(false);
             this.Menu.PerformLayout();
             this.stats.ResumeLayout(false);

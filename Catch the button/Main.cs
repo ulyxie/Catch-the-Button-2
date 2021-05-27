@@ -29,15 +29,6 @@ namespace Catch_the_button {
             this.Close();
         }
 
-        private void button_Click(object sender, EventArgs e) {
-            Game.Hit();
-        }
-
-        private void Form1_Click(object sender, EventArgs e) {
-            Game.Hit(obj: sender);
-        }
-
-
         private void button_MouseEnter(object sender, EventArgs e) {
             button.BackColor = Color.FromArgb(240, 240, 240);
         }
@@ -54,6 +45,14 @@ namespace Catch_the_button {
                 default:
                     break;
             }
+        }
+
+        private void button_MouseDown(object sender, MouseEventArgs e) {
+            Game.Hit();
+        }
+
+        private void Main_MouseDown(object sender, MouseEventArgs e) {
+            Game.Hit(obj: sender);
         }
     }
 }
