@@ -75,7 +75,6 @@ namespace Catch_the_button {
             btn.Location = new Point((frm.Width - btn.Width) / 2, (frm.Height - btn.Height) / 2);
             status = true;
             timer.Interval = delay;
-            
         }
         static void Go() { //first button hit
             timer.Start();
@@ -87,22 +86,27 @@ namespace Catch_the_button {
             if (!status) return; 
             if (first) {
                 Go();
+                points++;
+                AudioSystem.Hit();
                 first = false;
                 return;
             }
             if (stpwch.ElapsedMilliseconds < 500 && !(obj is Form || obj is System.Timers.Timer)) {
+                AudioSystem.Hit();
                 points += 2;
                 if (points % milestoneCount == 0 && delay > 400) {
                     delay -= delaydown;
                 }
             }
             else if (stpwch.ElapsedMilliseconds >= 500 && !(obj is Form || obj is System.Timers.Timer)) {
+                AudioSystem.Hit();
                 points++;
                 if (points % milestoneCount == 0 && delay > 400) {
                     delay -= delaydown;
                 }
             }
             else if (obj is System.Timers.Timer || obj is Form) {
+                AudioSystem.Miss();
                 points--;
                 miss++;
                 formResetter.Start();
