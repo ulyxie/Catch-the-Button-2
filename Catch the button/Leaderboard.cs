@@ -28,8 +28,8 @@ namespace Catch_the_button {
 
         static internal byte Read() {
             if (!Directory.Exists(root)) Directory.CreateDirectory(root);
-            if (!File.Exists(path)) { LeaderObject.Text = "Leaderboards not found"; File.Create(path); return 1; }
-            if (File.ReadAllLines(path).Length <1) { LeaderObject.Text = "Leaderboards empty. Be the first to place a record"; File.Create(path); return 1; }
+            if (!File.Exists(path)) { LeaderObject.Text = "Leaderboards not found"; File.Create(path).Close(); return 1; }
+            if (File.ReadAllLines(path).Length <1) { LeaderObject.Text = "Leaderboards empty. Be the first to place a record"; return 1; }
             string[] preformat = Sort(File.ReadAllLines(path));
             Leaderboards.Clear();
             for (int i = 0; i < preformat.Length; i++) {

@@ -67,6 +67,7 @@ namespace Catch_the_button {
             formResetter.Stop();
         }
         static internal void Start() { //pressed button start
+            AudioSystem.Init();
             points = miss = 0;
             delay = 2000;
             btn.Visible = btn.Enabled = true;
@@ -92,18 +93,20 @@ namespace Catch_the_button {
                 return;
             }
             if (stpwch.ElapsedMilliseconds < 500 && !(obj is Form || obj is System.Timers.Timer)) {
-                AudioSystem.Hit();
                 points += 2;
                 if (points % milestoneCount == 0 && delay > 400) {
                     delay -= delaydown;
+                    AudioSystem.LevelUp();
                 }
+                else AudioSystem.Hit();
             }
             else if (stpwch.ElapsedMilliseconds >= 500 && !(obj is Form || obj is System.Timers.Timer)) {
-                AudioSystem.Hit();
                 points++;
                 if (points % milestoneCount == 0 && delay > 400) {
                     delay -= delaydown;
+                    AudioSystem.LevelUp();
                 }
+                else AudioSystem.Hit();
             }
             else if (obj is System.Timers.Timer || obj is Form) {
                 AudioSystem.Miss();
@@ -122,6 +125,7 @@ namespace Catch_the_button {
             newPos();
         }
         static internal void Stop() {
+            if (!status) return;
             stpwch.Stop();
             timer.Stop();
             etaUpdater.Stop();

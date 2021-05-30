@@ -45,6 +45,10 @@ namespace Catch_the_button {
             this.label4 = new System.Windows.Forms.Label();
             this.quit = new System.Windows.Forms.Button();
             this.start = new System.Windows.Forms.Button();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
             this.Menu.SuspendLayout();
             this.stats.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -56,6 +60,10 @@ namespace Catch_the_button {
             this.Menu.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.Menu.Controls.Add(this.label11);
+            this.Menu.Controls.Add(this.label10);
+            this.Menu.Controls.Add(this.label8);
+            this.Menu.Controls.Add(this.label9);
             this.Menu.Controls.Add(this.button);
             this.Menu.Controls.Add(this.stats);
             this.Menu.Controls.Add(this.label7);
@@ -109,7 +117,7 @@ namespace Catch_the_button {
             this.milestone.AutoSize = true;
             this.milestone.Location = new System.Drawing.Point(569, 6);
             this.milestone.Name = "milestone";
-            this.milestone.Size = new System.Drawing.Size(207, 19);
+            this.milestone.Size = new System.Drawing.Size(252, 23);
             this.milestone.TabIndex = 1002;
             this.milestone.Text = "Next Milestone in: ...";
             // 
@@ -118,7 +126,7 @@ namespace Catch_the_button {
             this.timeleft.AutoSize = true;
             this.timeleft.Location = new System.Drawing.Point(-1, 5);
             this.timeleft.Name = "timeleft";
-            this.timeleft.Size = new System.Drawing.Size(189, 19);
+            this.timeleft.Size = new System.Drawing.Size(230, 23);
             this.timeleft.TabIndex = 7;
             this.timeleft.Text = "New Position in: ...";
             // 
@@ -128,7 +136,7 @@ namespace Catch_the_button {
             this.hp.AutoSize = true;
             this.hp.Location = new System.Drawing.Point(783, 6);
             this.hp.Name = "hp";
-            this.hp.Size = new System.Drawing.Size(54, 19);
+            this.hp.Size = new System.Drawing.Size(65, 23);
             this.hp.TabIndex = 1001;
             this.hp.Text = "HP: 3";
             // 
@@ -138,7 +146,7 @@ namespace Catch_the_button {
             this.ptsCount.AutoSize = true;
             this.ptsCount.Location = new System.Drawing.Point(843, 6);
             this.ptsCount.Name = "ptsCount";
-            this.ptsCount.Size = new System.Drawing.Size(90, 19);
+            this.ptsCount.Size = new System.Drawing.Size(109, 23);
             this.ptsCount.TabIndex = 0;
             this.ptsCount.Text = "Points: 0";
             // 
@@ -147,16 +155,16 @@ namespace Catch_the_button {
             this.label7.AutoSize = true;
             this.label7.Location = new System.Drawing.Point(538, 143);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(108, 19);
+            this.label7.Size = new System.Drawing.Size(131, 23);
             this.label7.TabIndex = 16;
             this.label7.Text = "budget Osu!";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(47, 209);
+            this.label2.Location = new System.Drawing.Point(12, 231);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(162, 19);
+            this.label2.Size = new System.Drawing.Size(197, 23);
             this.label2.TabIndex = 15;
             this.label2.Text = "Click the buttons";
             // 
@@ -187,7 +195,7 @@ namespace Catch_the_button {
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(108, -1);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(108, 19);
+            this.label1.Size = new System.Drawing.Size(131, 23);
             this.label1.TabIndex = 2;
             this.label1.Text = "Leaderboard";
             // 
@@ -210,7 +218,7 @@ namespace Catch_the_button {
             this.highscore.AutoSize = true;
             this.highscore.Location = new System.Drawing.Point(6, 22);
             this.highscore.Name = "highscore";
-            this.highscore.Size = new System.Drawing.Size(81, 19);
+            this.highscore.Size = new System.Drawing.Size(98, 23);
             this.highscore.TabIndex = 8;
             this.highscore.Text = "No Entry";
             this.highscore.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -221,7 +229,7 @@ namespace Catch_the_button {
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(125, -2);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(90, 19);
+            this.label3.Size = new System.Drawing.Size(109, 23);
             this.label3.TabIndex = 7;
             this.label3.Text = "Highscore";
             // 
@@ -235,7 +243,7 @@ namespace Catch_the_button {
             this.title.Location = new System.Drawing.Point(302, 98);
             this.title.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.title.Name = "title";
-            this.title.Size = new System.Drawing.Size(356, 45);
+            this.title.Size = new System.Drawing.Size(440, 56);
             this.title.TabIndex = 0;
             this.title.Text = "Catch the Button";
             this.title.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -249,7 +257,7 @@ namespace Catch_the_button {
             this.label6.Location = new System.Drawing.Point(388, 16);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(178, 200);
+            this.label6.Size = new System.Drawing.Size(223, 251);
             this.label6.TabIndex = 11;
             this.label6.Text = "2";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -258,9 +266,9 @@ namespace Catch_the_button {
             // 
             this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(12, 403);
+            this.label5.Location = new System.Drawing.Point(12, 477);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(216, 19);
+            this.label5.Size = new System.Drawing.Size(263, 23);
             this.label5.TabIndex = 10;
             this.label5.Text = "ESC - quit to main menu";
             // 
@@ -268,9 +276,9 @@ namespace Catch_the_button {
             // 
             this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(12, 367);
+            this.label4.Location = new System.Drawing.Point(12, 441);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(90, 19);
+            this.label4.Size = new System.Drawing.Size(109, 23);
             this.label4.TabIndex = 9;
             this.label4.Text = "Controls:";
             // 
@@ -298,9 +306,45 @@ namespace Catch_the_button {
             this.start.UseVisualStyleBackColor = true;
             this.start.Click += new System.EventHandler(this.start_Click);
             // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(12, 347);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(241, 23);
+            this.label8.TabIndex = 1;
+            this.label8.Text = "Click in <500ms: 2pts";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(12, 324);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(87, 23);
+            this.label9.TabIndex = 1003;
+            this.label9.Text = "Points:";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(12, 370);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(252, 23);
+            this.label10.TabIndex = 1004;
+            this.label10.Text = "Click after 500ms: 1pt";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(12, 393);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(120, 23);
+            this.label11.TabIndex = 1005;
+            this.label11.Text = "Miss: -1pt";
+            // 
             // Main
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(963, 520);
             this.Controls.Add(this.Menu);
@@ -348,6 +392,10 @@ namespace Catch_the_button {
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel stats;
         internal System.Windows.Forms.Label milestone;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label11;
     }
 }
 
