@@ -14,13 +14,13 @@ namespace Catch_the_button {
         public Main() {
             InitializeComponent();
         }
-
         private void start_Click(object sender, EventArgs e) {
             Game.Start();
         }
 
         private void Form1_Load(object sender, EventArgs e) {
             Game.Init(ptsCount, hp, Menu, button, this, timeleft, milestone);
+            AudioSystem.Init();
             Leaderboard.Init(ldrboard, this, highscore);
             button.Parent = stats.Parent = this;
         }

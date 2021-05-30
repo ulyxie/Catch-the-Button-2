@@ -25,6 +25,10 @@ namespace Catch_the_button {
         /// </summary>
         private void InitializeComponent() {
             this.Menu = new System.Windows.Forms.Panel();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
             this.button = new System.Windows.Forms.Label();
             this.stats = new System.Windows.Forms.Panel();
             this.milestone = new System.Windows.Forms.Label();
@@ -45,10 +49,6 @@ namespace Catch_the_button {
             this.label4 = new System.Windows.Forms.Label();
             this.quit = new System.Windows.Forms.Button();
             this.start = new System.Windows.Forms.Button();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
             this.Menu.SuspendLayout();
             this.stats.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -80,6 +80,42 @@ namespace Catch_the_button {
             this.Menu.Name = "Menu";
             this.Menu.Size = new System.Drawing.Size(961, 521);
             this.Menu.TabIndex = 0;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(12, 393);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(120, 23);
+            this.label11.TabIndex = 1005;
+            this.label11.Text = "Miss: -1pt";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(12, 370);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(252, 23);
+            this.label10.TabIndex = 1004;
+            this.label10.Text = "Click after 500ms: 1pt";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(12, 347);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(241, 23);
+            this.label8.TabIndex = 1;
+            this.label8.Text = "Click in <500ms: 2pts";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(12, 324);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(87, 23);
+            this.label9.TabIndex = 1003;
+            this.label9.Text = "Points:";
             // 
             // button
             // 
@@ -306,42 +342,6 @@ namespace Catch_the_button {
             this.start.UseVisualStyleBackColor = true;
             this.start.Click += new System.EventHandler(this.start_Click);
             // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(12, 347);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(241, 23);
-            this.label8.TabIndex = 1;
-            this.label8.Text = "Click in <500ms: 2pts";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(12, 324);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(87, 23);
-            this.label9.TabIndex = 1003;
-            this.label9.Text = "Points:";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(12, 370);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(252, 23);
-            this.label10.TabIndex = 1004;
-            this.label10.Text = "Click after 500ms: 1pt";
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(12, 393);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(120, 23);
-            this.label11.TabIndex = 1005;
-            this.label11.Text = "Miss: -1pt";
-            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 23F);
@@ -352,6 +352,9 @@ namespace Catch_the_button {
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.KeyPreview = true;
             this.Margin = new System.Windows.Forms.Padding(4);
+            this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(981, 567);
+            this.MinimumSize = new System.Drawing.Size(981, 567);
             this.Name = "Main";
             this.Text = "Catch the Button 2";
             this.Load += new System.EventHandler(this.Form1_Load);

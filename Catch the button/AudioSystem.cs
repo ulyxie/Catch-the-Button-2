@@ -10,10 +10,17 @@ namespace Catch_the_button {
         static SoundPlayer hit = new SoundPlayer();
         static SoundPlayer miss = new SoundPlayer();
         static SoundPlayer levelup = new SoundPlayer();
+        static SoundPlayer gamestart = new SoundPlayer();
         static internal void Init() {
             hit.SoundLocation = "./resources/hit.wav";
             miss.SoundLocation = "./resources/miss.wav";
             levelup.SoundLocation = "./resources/levelup.wav";
+            gamestart.SoundLocation = "./resources/game-start.wav";
+
+            hit.Load();
+            miss.Load();
+            levelup.Load();
+            gamestart.Load();
         }
         static internal void Hit() {
             hit.Play();
@@ -23,6 +30,9 @@ namespace Catch_the_button {
         }
         static internal void LevelUp() {
             levelup.Play();
+        }
+        static internal void Play() {
+            gamestart.Play();
         }
     }
 }

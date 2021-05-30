@@ -67,7 +67,6 @@ namespace Catch_the_button {
             formResetter.Stop();
         }
         static internal void Start() { //pressed button start
-            AudioSystem.Init();
             points = miss = 0;
             delay = 2000;
             btn.Visible = btn.Enabled = true;
@@ -76,6 +75,7 @@ namespace Catch_the_button {
             btn.Location = new Point((frm.Width - btn.Width) / 2, (frm.Height - btn.Height) / 2);
             status = true;
             timer.Interval = delay;
+            AudioSystem.Play();
         }
         static void Go() { //first button hit
             timer.Start();

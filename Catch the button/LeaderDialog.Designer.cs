@@ -39,7 +39,7 @@ namespace Catch_the_button {
             this.score.Location = new System.Drawing.Point(13, 80);
             this.score.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.score.Name = "score";
-            this.score.Size = new System.Drawing.Size(190, 29);
+            this.score.Size = new System.Drawing.Size(238, 36);
             this.score.TabIndex = 0;
             this.score.Text = "Your score is:  ...";
             // 
@@ -49,7 +49,7 @@ namespace Catch_the_button {
             this.label1.Location = new System.Drawing.Point(14, 123);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(210, 24);
+            this.label1.Size = new System.Drawing.Size(267, 29);
             this.label1.TabIndex = 1;
             this.label1.Text = "Please enter your name";
             // 
@@ -59,7 +59,7 @@ namespace Catch_the_button {
             this.label2.Location = new System.Drawing.Point(14, 147);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(295, 24);
+            this.label2.Size = new System.Drawing.Size(377, 29);
             this.label2.TabIndex = 2;
             this.label2.Text = "(leave blank to not save the score)";
             // 
@@ -68,7 +68,7 @@ namespace Catch_the_button {
             this.name.Location = new System.Drawing.Point(18, 187);
             this.name.Margin = new System.Windows.Forms.Padding(4, 7, 4, 7);
             this.name.Name = "name";
-            this.name.Size = new System.Drawing.Size(373, 28);
+            this.name.Size = new System.Drawing.Size(373, 34);
             this.name.TabIndex = 3;
             // 
             // submit
@@ -89,13 +89,13 @@ namespace Catch_the_button {
             this.label3.Location = new System.Drawing.Point(63, 9);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(272, 55);
+            this.label3.Size = new System.Drawing.Size(339, 69);
             this.label3.TabIndex = 5;
             this.label3.Text = "Game Over";
             // 
             // LeaderDialog
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 22F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(14F, 29F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(408, 290);
             this.Controls.Add(this.label3);
@@ -108,6 +108,10 @@ namespace Catch_the_button {
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.KeyPreview = true;
             this.Margin = new System.Windows.Forms.Padding(4, 7, 4, 7);
+            this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(426, 337);
+            this.MinimizeBox = false;
+            this.MinimumSize = new System.Drawing.Size(426, 337);
             this.Name = "LeaderDialog";
             this.Text = "Leaderboards";
             this.Load += new System.EventHandler(this.Form2_Load);
